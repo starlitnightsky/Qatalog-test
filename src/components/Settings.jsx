@@ -1,6 +1,7 @@
 import React, { Fragment, useContext, useEffect, useState } from 'react'
 import { Listbox, Transition } from '@headlessui/react'
 import { CheckIcon, ChevronDownIcon } from '@heroicons/react/20/solid'
+import { Link } from 'react-router-dom'
 
 import { ThemeContext } from '../App'
 
@@ -101,6 +102,14 @@ function Settings({ updatedSettings }) {
           </div>
         </div>
       </div>
+      <Link
+        to='/homepage'
+        className={`${
+          theme === 'Default' ? ' text-black' : 'text-red-600'
+        } font-semibold text-lg absolute bottom-4 w-full text-center`}
+      >
+        Your Homepage
+      </Link>
     </div>
   )
 }
