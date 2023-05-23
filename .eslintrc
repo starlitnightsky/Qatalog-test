@@ -1,0 +1,100 @@
+extends:
+  - eslint:recommended
+
+parserOptions:
+  ecmaVersion: 2020
+
+env:
+  es6: true
+  node: true
+
+rules:
+  accessor-pairs: 2
+  block-scoped-var: 1
+  callback-return: 2
+  class-methods-use-this: 2
+  consistent-this: [ 2, "self" ]
+  curly: [ 2, "all" ]
+  dot-location: [ 2, "property" ]
+  dot-notation: 2
+  eqeqeq: 2
+  func-style: [ 2, "declaration" ]
+  getter-return: 2
+  guard-for-in: 2
+  handle-callback-err: [ 2, "^err" ]
+  max-depth: [ 1, 4 ]
+  max-statements-per-line: [ 1, { "max": 1 } ]
+  multiline-comment-style: [ 2, "separate-lines" ]
+  new-cap: 2
+  no-alert: 2
+  no-caller: 2
+  no-console: 0
+  no-duplicate-imports: 2
+  no-else-return: 2
+  no-empty-pattern: 2
+  no-eq-null: 2
+  no-eval: 2
+  no-extend-native: 2
+  no-extra-bind: 2
+  no-extra-label: 2
+  no-fallthrough: 0
+  no-floating-decimal: 2
+  no-implied-eval: 2
+  no-invalid-this: 2
+  no-iterator: 2
+  no-label-var: 2
+  no-labels: 2
+  no-lone-blocks: 2
+  no-lonely-if: 2
+  no-loop-func: 2
+  no-multi-spaces: 2
+  no-multi-str: 2
+  no-negated-condition: 2
+  no-nested-ternary: 2
+  no-new: 2
+  no-new-object: 2
+  no-new-func: 2
+  no-new-require: 2
+  no-new-wrappers: 2
+  no-octal-escape: 2
+  no-path-concat: 2
+  no-proto: 2
+  no-prototype-builtins: 2
+  no-redeclare: [ 2, { "builtinGlobals": true } ]
+  no-restricted-globals: 2
+  no-return-await: 2
+  no-script-url: 2
+  no-self-compare: 2
+  no-sequences: 2
+  no-shadow: [ 2, { "hoist": "all" } ]
+  no-shadow-restricted-names: 2
+  no-template-curly-in-string: 2
+  no-throw-literal: 1
+  no-undef-init: 2
+  no-unmodified-loop-condition: 2
+  no-unneeded-ternary: 2
+  no-unused-expressions: 2
+  no-use-before-define: [ 2, { "functions": false } ]
+  no-useless-call: 2
+  no-useless-computed-key: 2
+  no-useless-concat: 2
+  no-useless-constructor: 2
+  no-useless-rename: 2
+  no-var: 2
+  no-void: 2
+  no-with: 2
+  object-shorthand: 2
+  operator-assignment: 2
+  prefer-arrow-callback: 2
+  prefer-const: 2
+  prefer-numeric-literals: 2
+  prefer-promise-reject-errors: 1
+  prefer-rest-params: 2
+  prefer-spread: 2
+  prefer-template: 2
+  require-await: 2
+  strict: 2
+  symbol-description: 2
+  unicode-bom: 2
+  wrap-iife: 2
+  yoda: 2
