@@ -16,6 +16,17 @@ function Settings({ updatedSettings }) {
     }
   }, [theme])
 
+  function reset() {
+    setSelectedTheme('')
+    updatedSettings('Default')
+  }
+
+  function apply() {
+    if (selectedTheme !== '') {
+      updatedSettings(selectedTheme)
+    }
+  }
+
   return (
     <div className='w-full justify-center flex'>
       <div className='bg-[#D8D8D8] rounded-[40px] w-[404px] h-[351px] px-6 py-7 flex flex-col'>
@@ -73,6 +84,22 @@ function Settings({ updatedSettings }) {
             </Transition>
           </div>
         </Listbox>
+        <div className='flex flex-col-reverse h-full font-bold'>
+          <div className='flex gap-4 w-full h-16'>
+            <button
+              className='bg-white rounded-[10px] px-14 text-blue-500 hover:bg-gray-50 active:bg-gray-100'
+              onClick={reset}
+            >
+              Reset
+            </button>
+            <button
+              className='bg-blue-600 w-full text-white rounded-[10px] hover:bg-blue-700 active:bg-blue-800'
+              onClick={apply}
+            >
+              Apply Theme
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   )
